@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Example</title>
+    <script type="text/javascript">
+
+        function startup() {
+            const button = document.querySelector("#button");
+            button.addEventListener("click", async () => {
+                const response = fetch("https://tanraku.de/test.php");
+                console.log(response);
+            });
+        }
+
+    </script>
+</head>
+<body onload="startup();">
+    <h1>Fetch API Example</h1>
+    <div>
+        <input id="button" type="button" value="Fetch" />
+    </div>
+</body>
+</html>
